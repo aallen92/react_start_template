@@ -6,6 +6,7 @@ import LoadingSpinner from "./components/ui/LoadingSpinner";
 import DashboardScreen from "./routes/Dashboard";
 import LoginScreen from "./routes/Login";
 import RegisterScreen from "./routes/Register";
+import ForgotPasswordScreen from "./routes/ForgotPassword";
 
 function App() {
   const auth = useSelector((state) => state.auth);
@@ -33,6 +34,7 @@ function App() {
         <Routes>
           <Route path='/' element={<LoginScreen />} />
           <Route path='/register' element={<RegisterScreen />} />
+          <Route path='/forgot-password' element={<ForgotPasswordScreen />} />
         </Routes>
       )}
     </BrowserRouter>
