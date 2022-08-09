@@ -27,6 +27,18 @@ function LoginScreen() {
         />
         <Button label='Sign In' onClick={() => signInHandler()} />
       </div>
+      <p className='mt-4'>
+        Not a member yet?{" "}
+        <a href='/register' className='text-blue-500 underline'>
+          Join Now
+        </a>
+      </p>
+      <p className='mt-4'>
+        Forgot Password?{" "}
+        <a href='/forgot-password' className='text-blue-500 underline'>
+          Click Here
+        </a>
+      </p>
     </div>
   );
 }

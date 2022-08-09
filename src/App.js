@@ -5,6 +5,7 @@ import { markNotAuthenticated } from "./redux/actions/authActions";
 import LoadingSpinner from "./components/ui/LoadingSpinner";
 import DashboardScreen from "./routes/Dashboard";
 import LoginScreen from "./routes/Login";
+import RegisterScreen from "./routes/Register";
 
 function App() {
   const auth = useSelector((state) => state.auth);
@@ -31,6 +32,7 @@ function App() {
       ) : (
         <Routes>
           <Route path='/' element={<LoginScreen />} />
+          <Route path='/register' element={<RegisterScreen />} />
         </Routes>
       )}
     </BrowserRouter>
